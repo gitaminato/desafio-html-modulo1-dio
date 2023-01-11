@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      Introdução ao HTML
+    </title>
+  </head>
+  <body>
+    <h1 style="color:deeppink;">Introdução ao HTML</h1>
+    <h2 id="indice">ÍNDICE</h2>
+    <ul style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      <li><a href="#breve">Breve História da Web</a></li>
+      <li><a href="#sobrehtml"> Sobre o HTML</a></li>
+      <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+      <li><a href="#tags">Tags</a></li>
+      <li><a href="#atributos">Atributos</a></li>
+      <li><a href="#texto">Tags para texto</a></li>
+      <li><a href="#listas">Listas</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#referencias">Referências</a></li>
+      <li><a href="#linksuteis">Links Úteis</a></li>
+    </ul>
+    <hr />
+    <h2 id="breve">Breve História da Web</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      Em 1989 Tim Berners-Lee, baseando-se no protocolo TCP/IP e na utilização
+      de hipertextos (ou seja o HTML), criou a World Wide Web (<abbr title="World Wide Web">WWW</abbr>), primeiro
+      navegador com o objetivo de globalizar a comunicação via Internet.
+    </p>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      A primeira página da web foi publicada em 6 de agosto de 1991, podendo ser
+      acessada até hoje pelo link:
+      <a href="http://info.cern.ch" target="_blank">info.cern.ch/</a>.
+    </p>
+    <h2 id="sobrehtml">Sobre o HTML</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      <abbr title="Hypertext Markup Language">HTML</abbr> é a sigla para <mark> Hypertext Markup Language</mark>, ou em português,<mark>"Linguagem de Marcação de Hipertexto"</mark> e é utilizado para criação de documentos que podem ser interpretados por navegadores web.
+    </p>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      É importante salientar que <abbr title="Hypertext Markup Language">HTML</abbr> não é uma linguagem de programação, e sim um arquivo de texto com delimitadores e sintaxe própria. Cada delimitador tem função e comportamento específicos que interferem em como o computador irá interpretar as informações contidas no arquivo de texto.
+    </p>
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      Todo <abbr title="Hypertext Markup Language">HTML</abbr> é estruturado baseado em "Tags" (delimitadores que definem como o documento será interpretado pela página web). Para escrever um arquivo <abbr title="Hypertext Markup Language">HTML</abbr> podemos utilizar qualquer formatador de texto ou <abbr title="Integrated Development Environment.">IDE</abbr>. No meu caso utilizei o Visual Studio Code (VSCode). <a href="https://code.visualstudio.com/" target="_blank">Clique aqui</a> para baixar.
+    </p>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      Um documento <abbr title="Hypertext Markup Language">HTML</abbr> consiste em três partes principais:
+    </p>
+    <ol style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      <li>"html" - Define o que será a página HTML</li>
+      <li>"head" - O que será pré-carregado na página web</li>
+      <li>"body" - O que irá aparecer para o usuário</li>
+    </ol>
+    <h2 id="tags">Tags</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      As tags principais são as mencionadas acima:"html", "head" e "body" que
+      formam a base para o arquivo HTML. Porém podemos utilizar diversas tags
+      dentro de cada uma delas que irão ditar como o arquivo será interpretado
+      quando aberto na página web.
+    </p>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      Existem inúmeras tags, cada uma com especificicações e funcionalidades diferentes. Podemos conferir a lista atualizada no site da W3Schools, que é a empresa responsável por atualizar e definir os padrões globais para a sintaxe do HTML.
+      <a href="https://www.w3schools.com/tags/default.asp" target="_blank">Clique aqui</a> para conferir a lista de tags HTML da W3Schools.
+    </p>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      A maioria das tags<sup>1</sup> possuem uma abertura e fechamento, simbolizadas por <textarea cols="15" rows="1">  "<>" e "</>" </textarea> respectivamente. Tudo que estiver entre elas, será interpretado de acordo com a
+      funcionalidade da tag.
+    </p>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      No exemplo abaixo, utilizamos a tag <strong><i> i </i></strong> para deixar o texto dentro da <strong><i>tag i</i></strong> em itálico:
+    </p>
+
+    <textarea cols="5" rows="1">  <i> </textarea> <i>texto</i>
+    <textarea cols="5" rows="1">  </i> </textarea>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      Outro exemplo é deixar o texto em itálico e negrito:
+    </p>
+    <textarea cols="15" rows="1"> <strong><i> </textarea>
+    <strong> <i>texto</i></strong>
+    <textarea cols="15" rows="1">  </i></strong> </textarea>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+    <u>Obs</u><sup>1</sup>: existem as que não possuem tags de fechamento, como por exemplo o <i>input</i> e <i>img</i>. Para fechar, é colocado o "/" no final da própria tag. Por exemplo:
+    </p>
+
+    <textarea cols="10" rows="1">  <input /> </textarea>
+    <p></p>
+    <textarea cols="10" rows="1">  <img /> </textarea>
+
+    <h2 id="atributos">Atributos</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      São propriedades que as tags podem possuir. Elas podem ser Gerais (podem ser utilizadas por qualquer tag) ou Específicas (funcionam em apenas certas tags).
+    </p>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      São exemplos de tags gerais:
+    </p>
+    <ul style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      <li>id - Identificador de elemento</li>
+      <li>style - Utilizado para colocar comandos CSS para formatação</li>
+      <li>
+        class - Utilizado para colocar comandos CSS para formatação de forma padronizada
+      </li>
+    </ul>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      São exemplos de tags expecíficas:
+    </p>
+    <ul style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+      <li>input type - Insere um campo de texto/número/cor</li>
+      <li>img src - Insere uma imagem por um caminho especificado</li>
+      <li>
+        img width - Insere uma imagem por um caminho especificado com uma largura determinada
+      </li>
+    </ul>
+
+    <h2 id="texto">Tags para Texto</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif"> As principais tags para texto são:
+        <ul style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+            <li>h1,h2,h3.. - Formata diferentes níveis de títulos e subtítulos</li>
+            <li>p - Insere uma linha e um paragrafo</li>
+            <li>blockquote - Formata para citação/observação</li>
+            <li>sup - Deixa um texto na parte superior. Exemplo <sup>texto</sup> </li>
+            <li>del - Risca um texto. Exemplo <del>texto</del> </li>
+            <li>sub - Deixa um texto na parte inferior. Exemplo <sub>texto</sub> </li>
+        </ul>
+    </p>
+
+    <h2 id="listas">Listas</h2>
+    <small><a href="#indice">(voltar)</a></small>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif"> Extistem dois tipos de listas, a numeradas <i>ol</i> e as sem numeração <i>ul</i>. Para adicionar uma lista, devemos utilizar uma das tags de listagem <i>ol</i> ou <i>ul</i> e dentro dela colocar a tag <i>li</i> que cria as linhas. Exemplo:</p>
+    <p></p>
+    <textarea cols="20" rows="5">
+<ol> Lista
+    <li>1. texto</li>
+    <li>2. texto</li>
+</ol>
+    </textarea>
+
+    <p></p>
+    <textarea cols="20" rows="5">
+<ul> Lista
+<li>. texto</li>
+<li>. texto</li>
+</ul>
+</textarea>
+
+<p></p>
+
+<h2 id="links">Links</h2>
+<small><a href="#indice">(voltar)</a></small>
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+Para inserir links, utilizamos a tag "a" referente à <i>anchor</i>. Exemplo:</p>
+<textarea cols="20" rows="1"> <a href=""></a> </textarea> 
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+Para abrir um link em uma página em branco, adicionamos o atributo target="_blank". Exemplo:
+</p>
+<textarea cols="30" rows="1">  <a href="" target="_blank"></a> </textarea> 
+
+<h2 id="referencias">Referências</h2>
+<small><a href="#indice">(voltar)</a></small>
+
+<blockquote style="font-family: Verdana, Geneva, Tahoma, sans-serif" >
+  What does IDE stand for?<a href="https://www.acronymfinder.com/IDE.html#:~:text=IDE.%20Integrated%20Development%20Environment.%20%0AIDE.%20Integrated%20Device%20Electronics.,Development%20Environment.%20%0AIDE.%20Investigational%20Device%20Exemption%20%28FDA%29%20%0AIDE." target="_blank"> acronymfinder.com</a>. <sub> Acesso em 11 de janeiro de 2023 às 15:40.</sub>
+</blockquote>
+
+<p></p>
+
+<blockquote style="font-family: Verdana, Geneva, Tahoma, sans-serif" >
+  Introdução ao HTML <a href="https://web.dio.me/" target="_blank">https://dio.me</a>. <sub> Acesso em 11 de janeiro de 2023 às 15:00.</sub>
+</blockquote>
+
+<p></p>
+
+<blockquote style="font-family: Verdana, Geneva, Tahoma, sans-serif" >
+  As 20 Melhores Fontes HTML Para Usar em 2023 <a href="https://www.hostinger.com.br/tutoriais/melhores-fontes-html#Como_Mudar_uma_Fonte_em_Texto_para_Fontes_em_HTML" target="_blank">https://hostinger.com.br</a>. <sub> Acesso em 11 de janeiro de 2023 às 15:20.</sub>
+</blockquote>
+
+
+<h2 id="linksuteis">Links Úteis</h2>
+<small><a href="#indice">(voltar)</a></small>
+
+<ul style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+  <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank">Lista de HTML</a></li>
+  <li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Lista de códigos Emmet</a></li>
+</ul>
+
+<iframe src="https://giphy.com/embed/YS7BctOtlyed2" width="480" height="201" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/kawaii-sky-YS7BctOtlyed2">via GIPHY</a></p>
+
+  </body>
+</html>
